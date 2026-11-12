@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Guía Educativa y Rutas de Turismo Sostenible en Colombia. Sitio educativo sin fines comerciales. recargaconfiable.online"><link rel="canonical" href="https://recargaconfiable.online/"><meta name="author" content="Luis Alejandro Arango Barrios"><meta name="robots" content="index, follow"><title>Guía de Turismo Educativo Colombia · Luis Alejandro Arango Barrios</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>:root {    --bg-primary: #0c0a09;    --bg-secondary: #1c1917;    --bg-card: rgba(28, 25, 23, 0.82);    --bg-card-hover: rgba(41, 37, 36, 0.92);    --border-glow: rgba(212, 175, 55, 0.45);    --border-subtle: rgba(214, 211, 209, 0.10);    --accent-gold: #d4af37;    --accent-champagne: #e8d5a3;    --accent-amber: #c9a227;    --accent-bronze: #b8860b;    --accent-emerald: #34d399;    --text-primary: #fafaf9;    --text-secondary: #e7e5e4;    --text-muted: #a8a29e;    --gradient-1: linear-gradient(135deg, #d4af37 0%, #c9a227 50%, #b8860b 100%);    --gradient-2: linear-gradient(135deg, #e8d5a3 0%, #d4af37 100%);    --gradient-3: linear-gradient(135deg, #c9a227 0%, #34d399 100%);}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+body {    font-family: 'Inter', system-ui, -apple-system, sans-serif;    line-height: 1.7;    color: var(--text-secondary);    background-color: var(--bg-primary);    background-image:        radial-gradient(circle at 12% 8%, rgba(212, 175, 55, 0.09) 0%, transparent 42%),        radial-gradient(circle at 88% 88%, rgba(184, 134, 11, 0.07) 0%, transparent 42%),        radial-gradient(circle at 50% 50%, rgba(232, 213, 163, 0.03) 0%, transparent 55%);    background-attachment: fixed;    min-height: 100vh;    overflow-x: hidden;}
+body::before {    content: '';    position: fixed;    inset: 0;    background-image:        linear-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 1px),        linear-gradient(90deg, rgba(212, 175, 55, 0.04) 1px, transparent 1px);    background-size: 48px 48px;    pointer-events: none;    z-index: 0;    animation: gridDrift 70s linear infinite;}
+@keyframes gridDrift {    0% { background-position: 0 0; }    100% { background-position: 48px 48px; }}
+.scan-line {    position: fixed;    top: 0;    left: 0;    right: 0;    height: 1px;    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);    box-shadow: 0 0 14px var(--accent-gold);    z-index: 9999;    pointer-events: none;    opacity: 0.35;    animation: scan 9s linear infinite;}
+@keyframes scan {    0% { transform: translateY(-2px); }    100% { transform: translateY(100vh); }}
+
+/* ===== HEADER ===== */header {    background: rgba(12, 10, 9, 0.88);    backdrop-filter: blur(22px) saturate(180%);    border-bottom: 1px solid var(--border-subtle);    padding: 1rem 2rem;    position: sticky;    top: 0;    z-index: 1000;}
+.header-container {    max-width: 1280px;    margin: 0 auto;    display: flex;    justify-content: space-between;    align-items: center;    flex-wrap: wrap;    gap: 1rem;}
+.logo {    font-family: 'Cormorant Garamond', serif;    font-size: 1.25rem;    font-weight: 700;    color: var(--text-primary);    display: flex;    align-items: center;    gap: 0.75rem;    text-decoration: none;}
+.logo-mark {    width: 42px;    height: 42px;    border-radius: 50%;    background: var(--gradient-1);    display: grid;    place-items: center;    font-family: 'JetBrains Mono', monospace;    color: #0c0a09;    font-weight: 700;    font-size: 0.9rem;    box-shadow: 0 0 28px rgba(212, 175, 55, 0.55);}
+.logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-text small { font-size: 0.68rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+
+nav ul { list-style: none; display: flex; gap: 0.35rem; flex-wrap: wrap; }
+nav a { color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.88rem; padding: 0.55rem 1rem; border-radius: 10px; transition: all 0.25s ease; cursor: pointer; display: inline-block; border: 1px solid transparent; }
+nav a:hover, nav a.active { color: var(--accent-gold); background: rgba(212, 175, 55, 0.12); border-color: var(--border-glow); box-shadow: 0 0 14px rgba(212, 175, 55, 0.2); }
+
+/* ===== HERO ===== */.hero { position: relative; padding: 5rem 2rem 4rem; text-align: center; overflow: hidden; }
+.hero-content { position: relative; z-index: 1; max-width: 920px; margin: 0 auto; }
+.badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(212, 175, 55, 0.08); border: 1px solid var(--border-glow); padding: 0.5rem 1.15rem; border-radius: 100px; font-size: 0.8rem; margin-bottom: 1.5rem; color: var(--accent-gold); font-family: 'JetBrains Mono', monospace; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.2rem; color: var(--text-primary); }
+.hero h1 .accent { background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 1.1rem; max-width: 740px; margin: 0 auto 2rem; color: var(--text-muted); }
+.hero-meta { display: inline-flex; align-items: center; gap: 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; color: var(--text-muted); margin-top: 1.5rem; padding: 0.6rem 1.25rem; background: rgba(0,0,0,0.35); border: 1px solid var(--border-subtle); border-radius: 10px; flex-wrap: wrap; justify-content: center; }
+.hero-meta .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent-emerald); box-shadow: 0 0 8px var(--accent-emerald); }
+
+.tech-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem 0 0; }
+.stat-card { background: linear-gradient(135deg, rgba(212, 175, 55, 0.07) 0%, transparent 100%); border: 1px solid var(--border-subtle); padding: 1.25rem 1rem; border-radius: 14px; text-align: center; }
+.stat-card .num { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; font-weight: 700; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-card .label { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; }
+
+/* ===== MAIN & PAGES ===== */main { max-width: 1180px; margin: 0 auto; padding: 3rem 2rem 4rem; position: relative; z-index: 1; }
+.page { display: none; animation: fadeUp 0.4s ease; }
+.page.active { display: block; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+section { background: var(--bg-card); backdrop-filter: blur(12px); padding: 2.5rem; margin-bottom: 1.8rem; border-radius: 20px; border: 1px solid var(--border-subtle); position: relative; overflow: hidden; }
+section::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gradient-1); opacity: 0.7; border-radius: 3px 0 0 3px; }
+h2 { font-family: 'Cormorant Garamond', serif; color: var(--text-primary); font-size: 1.85rem; margin-bottom: 1.3rem; display: flex; align-items: center; gap: 0.8rem; }
+h2::before { content: ''; width: 4px; height: 26px; background: var(--gradient-1); border-radius: 2px; }
+h3 { font-family: 'Cormorant Garamond', serif; color: var(--accent-gold); font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.6rem; }
+p { margin-bottom: 1rem; color: var(--text-secondary); text-align: justify; }
+ul, ol { margin-left: 1.6rem; margin-bottom: 1rem; color: var(--text-secondary); }
+li { margin-bottom: 0.5rem; }
+strong { color: var(--text-primary); }
+
+/* GRID & CARDS */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 1.5rem 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+.card-regio { background: rgba(212, 175, 55, 0.04); border: 1px solid var(--border-subtle); padding: 1.8rem; border-radius: 16px; transition: 0.3s; }
+.card-regio:hover { border-color: var(--accent-gold); transform: translateY(-3px); }
+.card-regio h3 { color: var(--accent-gold); margin-top: 0; }
+
+.highlight-box, .info-box, .warning-box { padding: 1.3rem 1.5rem; margin: 1.5rem 0; border-radius: 14px; border: 1px solid; }
+.highlight-box { background: rgba(212, 175, 55, 0.07); border-color: rgba(212, 175, 55, 0.28); border-left: 3px solid var(--accent-gold); }
+.info-box { background: rgba(52, 211, 153, 0.05); border-color: rgba(52, 211, 153, 0.22); border-left: 3px solid var(--accent-emerald); }
+.warning-box { background: rgba(184, 134, 11, 0.07); border-color: rgba(184, 134, 11, 0.28); border-left: 3px solid var(--accent-bronze); }
+
+/* ===== FOOTER EXACTO A LA REFERENCIA ===== */footer { background: rgba(8, 6, 5, 0.96); color: var(--text-secondary); padding: 3.5rem 2rem 1.5rem; margin-top: 4rem; border-top: 1px solid var(--border-subtle); position: relative; z-index: 1; }
+.footer-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2.5rem; align-items: start; }
+footer h4 { color: var(--text-primary); margin-bottom: 1rem; font-size: 0.85rem; font-weight: 600; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.12em; text-transform: uppercase; }
+footer p, footer li { font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; }
+footer ul { list-style: none; margin-left: 0; }
+footer ul li { margin-bottom: 0.5rem; }
+footer a { color: var(--text-secondary); text-decoration: none; cursor: pointer; transition: color 0.25s ease; }
+footer a:hover { color: var(--accent-gold); }
+
+.identificacion-card { background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(184, 134, 11, 0.03)); border: 1px solid var(--border-glow); padding: 1.8rem; border-radius: 14px; position: relative; }
+.identificacion-card::before { content: 'ID'; position: absolute; top: -10px; left: 1.5rem; background: var(--bg-primary); color: var(--accent-gold); padding: 0 0.6rem; font-size: 0.7rem; font-family: 'JetBrains Mono', monospace; font-weight: 600; letter-spacing: 0.12em; }
+.identificacion-card h4 { color: var(--accent-gold); margin-bottom: 0.8rem; }
+.identificacion-card p { font-size: 0.83rem; text-align: left; margin-bottom: 0.8rem; }
+.responsable-datos { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+.responsable-datos strong { color: var(--text-primary); }
+
+.footer-bottom { max-width: 1280px; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); text-align: center; font-size: 0.8rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+.footer-bottom p { margin-bottom: 0.3rem; text-align: center; }
+
+@media (max-width: 768px) { .grid-3, .grid-2, .footer-container, .tech-stats { grid-template-columns: 1fr; } .hero { padding: 4rem 1.5rem; } nav ul { justify-content: center; } .header-container { flex-direction: column; } }
+</style></head><body>
+
+<div class="scan-line"></div>
+
+<header>
+    <div class="header-container">
+        <a href="#inicio" onclick="mostrarPagina('inicio', event)" class="logo">
+            <div class="logo-mark">LA</div>
+            <div class="logo-text">
+                <span>Luis Alejandro Arango Barrios</span>
+                <small>Guía Educativa Turismo</small>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarPagina('inicio', event)" id="nav-inicio" class="active">Inicio</a></li>
+                <li><a href="#sobre-nosotros" onclick="mostrarPagina('sobre-nosotros', event)" id="nav-sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#mision-vision" onclick="mostrarPagina('mision-vision', event)" id="nav-mision-vision">Misión y Visión</a></li>
+                <li><a href="#politicas-privacidad" onclick="mostrarPagina('politicas-privacidad', event)" id="nav-politicas-privacidad">Políticas y Privacidad</a></li>
+                <li><a href="#terminos-condiciones" onclick="mostrarPagina('terminos-condiciones', event)" id="nav-terminos-condiciones">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- ================= 1. PÁGINA INICIO ================= -->
+    <div id="page-inicio" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <span class="badge">🌿 Plataforma Educativa · Turismo Consciente en Colombia</span>
+                <h1>Guía Interactiva de <span class="accent">Turismo Sostenible</span></h1>
+                <p>Aprende a leer el territorio, comprende la megadiversidad de nuestras 6 regiones naturales y descubre información rigurosa sobre patrimonio cultural, geografía y buenas prácticas de viaje.</p>
+                <div class="hero-meta">
+                    <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
+                    <span>v2.0</span>
+                    <span>COL-2026</span>
+                </div>
+                <div class="tech-stats">
+                    <div class="stat-card">
+                        <div class="num">06</div>
+                        <div class="label">Regiones Naturales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">05</div>
+                        <div class="label">Pisos Térmicos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">UNESCO</div>
+                        <div class="label">Patrimonios</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">24/7</div>
+                        <div class="label">Consulta Libre</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Propósito Educativo del Portal</h2>
+            <p>Este sitio web ha sido diseñado con un <strong>propósito netamente educativo, pedagógico y cultural</strong>. Su meta es brindar a estudiantes, viajeros y ciudadanos una guía clara para comprender la riqueza ambiental, la historia y la geografía de Colombia sin propósitos comerciales masivos.</p>
+            <div class="highlight-box">
+                <strong>Enfoque en Turismo Regenerativo:</strong>
+                <p style="margin-top: 0.4rem;">Fomentamos el respeto absoluto por los ecosistemas de páramo, selva y costa, así como la valoración de los saberes ancestrales de las comunidades indígenas y afrodescendientes del país.</p>
+            </div>
+            <p><strong>Este sitio NO realiza:</strong></p>
+            <ul>
+                <li>Captación, almacenamiento ni procesamiento de datos personales de los usuarios.</li>
+                <li>Venta de tiquetes, reservas hoteleras ni paquetes turísticos comerciales.</li>
+                <li>Suscripciones de pago ni transacciones financieras de ningún tipo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Las 6 Regiones Naturales de Colombia</h2>
+            <p>Colombia cuenta con una privilegiada posición geográfica que configura ecosistemas radicalmente diversos a lo largo de su territorio:</p>
+            
+            <div class="grid-3">
+                <div class="card-regio">
+                    <h3>Región Andina</h3>
+                    <p>Dominada por las tres cordilleras de los Andes. Alberga valles cafeteros, páramos vitales y una gran diversidad de pisos térmicos.</p>
+                </div>
+                <div class="card-regio">
+                    <h3>Región Caribe</h3>
+                    <p>Llanuras costeras, arrecifes coralinos, la Sierra Nevada de Santa Marta y una rica herencia cultural afro e indígena.</p>
+                </div>
+                <div class="card-regio">
+                    <h3>Región Pacífica</h3>
+                    <p>Selva húmeda tropical de alta pluviosidad, manglares extensos y santuario de reproducción de ballenas jorobadas.</p>
+                </div>
+                <div class="card-regio">
+                    <h3>Región Orinoquía</h3>
+                    <p>Vastas sabanas inundables, hatos ganaderos tradicionales y una biodiversidad única en humedales y ríos.</p>
+                </div>
+                <div class="card-regio">
+                    <h3>Región Amazonía</h3>
+                    <p>La reserva forestal y pulmonar más importante del planeta, habitada por sabidurías ancestrales milenarias.</p>
+                </div>
+                <div class="card-regio">
+                    <h3>Región Insular</h3>
+                    <p>Archipiélagos oceánicos en el Caribe y el Pacífico, declarados reserva de biosfera mundial (Seaflower).</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= 2. PÁGINA SOBRE NOSOTROS ================= -->
+    <div id="page-sobre-nosotros" class="page">
+        <section>
+            <h2>Sobre el Proyecto y Autor</h2>
+            <p>Esta plataforma digital nace como un esfuerzo independiente de investigación y divulgación pedagógica enfocado en el patrimonio natural y cultural de Colombia. El proyecto busca dotar a los ciudadanos de herramientas analíticas para comprender el territorio antes de recorrerlo.</p>
+            <div class="info-box">
+                <strong>Compromiso con la Transparencia:</strong> Todo el contenido de esta guía se sustenta en principios de acceso libre a la información, promoviendo el conocimiento geográfico, la protección de los recursos hídricos y el turismo de bajo impacto ambiental.
+            </div>
+            <p>El portal es administrado y dirigido bajo la responsabilidad directa de <strong>Luis Alejandro Arango Barrios</strong> desde la ciudad de Barranquilla, consolidando un espacio digital seguro, estrictamente informativo y sin ánimo de lucro.</p>
+        </section>
+    </div>
+
+    <!-- ================= 3. PÁGINA MISIÓN Y VISIÓN ================= -->
+    <div id="page-mision-vision" class="page">
+        <section>
+            <h2>Misión</h2>
+            <p>Consolidar un repositorio digital educativo de libre acceso que eduque sobre la biodiversidad, la riqueza pluricultural y los pisos térmicos de Colombia, impulsando una cultura de viaje consciente, informada y respetuosa del medio ambiente.</p>
+            
+            <h2>Visión</h2>
+            <p>Ser reconocidos para el año 2026 como una guía pedagógica de referencia nacional en la divulgación de buenas prácticas de turismo sostenible, aportando al conocimiento geográfico y a la conservación de los ecosistemas colombianos.</p>
+
+            <div class="warning-box">
+                <strong>Principios Éticos:</strong> Respeto por los Parques Nacionales Naturales, preservación de la fauna silvestre, apoyo a la economía local artesanal y rechazo absoluto a cualquier forma de explotación turística irresponsable.
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= 4. PÁGINA POLÍTICAS Y PRIVACIDAD ================= -->
+    <div id="page-politicas-privacidad" class="page">
+        <section>
+            <h2>Políticas de Privacidad y Tratamiento de Datos</h2>
+            <p>En cumplimiento de las normativas de protección de información, se informa a los visitantes que este sitio web <strong>NO recopila, almacena ni trata datos personales</strong> de ningún tipo.</p>
+            <ul>
+                <li>No se utilizan formularios de registro que soliciten datos sensibles.</li>
+                <li>No se emplean cookies de rastreo comercial ni perfiles publicitarios.</li>
+                <li>La navegación es completamente anónima, informativa y de carácter educativo.</li>
+            </ul>
+            <p>Cualquier consulta relacionada con las políticas de este sitio puede dirigirse directamente a los canales de contacto oficiales del responsable indicados en el pie de página.</p>
+        </section>
+    </div>
+
+    <!-- ================= 5. PÁGINA TÉRMINOS Y CONDICIONES ================= -->
+    <div id="page-terminos-condiciones" class="page">
+        <section>
+            <h2>Términos y Condiciones de Uso</h2>
+            <p>El acceso y uso de este sitio web implica la aceptación de los siguientes términos:</p>
+            <ol>
+                <li><strong>Carácter Educativo:</strong> Todo el contenido expuesto es de libre consulta con fines estrictamente pedagógicos y de divulgación cultural.</li>
+                <li><strong>Propiedad Intelectual:</strong> Los textos y la estructuración del sitio están protegidos bajo los principios de autoría de Luis Alejandro Arango Barrios. Se permite su cita académica mencionando la fuente.</li>
+                <li><strong>Ausencia de Comercio:</strong> Este portal no comercializa productos, tiquetes, servicios de guía comercial ni transacciones financieras.</li>
+                <li><strong>Limitación de Responsabilidad:</strong> El autor no asume responsabilidad por interpretaciones erróneas de la información geográfica o climática provista de manera general en el sitio.</li>
+            </ol>
+        </section>
+    </div>
+</main>
+
+<!-- ================= FOOTER OFICIAL CON DATOS DE IDENTIFICACIÓN ================= -->
+<footer>
+    <div class="footer-container">
+        <!-- BLOQUE DE IDENTIFICACIÓN DEL ANUNCIANTE Y RESPONSABLE -->
+        <div>
+            <div class="identificacion-card">
+                <h4>IDENTIFICACIÓN DEL ANUNCIANTE Y RESPONSABLE</h4>
+                <p>Esta página web es una guía educativa de carácter no comercial. El anunciante, responsable de la página web y responsable del tratamiento de los datos es:</p>
+                <div class="responsable-datos">
+                    <strong>Luis Alejandro Arango Barrios</strong><br>
+                    NIT: 8.743.951-1<br>
+                    Cra 26a #76-42, Barranquilla, Atlántico — Colombia<br>
+                    Correo: luis.alejandroarango17@gmail.com<br>
+                    Teléfono: 3505348622
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVEGACIÓN RÁPIDA -->
+        <div>
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarPagina('inicio', event)">Inicio</a></li>
+                <li><a href="#sobre-nosotros" onclick="mostrarPagina('sobre-nosotros', event)">Sobre Nosotros</a></li>
+                <li><a href="#mision-vision" onclick="mostrarPagina('mision-vision', event)">Misión y Visión</a></li>
+            </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div>
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#politicas-privacidad" onclick="mostrarPagina('politicas-privacidad', event)">Políticas y Privacidad</a></li>
+                <li><a href="#terminos-condiciones" onclick="mostrarPagina('terminos-condiciones', event)">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Luis Alejandro Arango Barrios &middot; Todos los derechos reservados.</p>
+        <p>Sitio educativo &middot; Sin fines comerciales &middot; Sin captación de datos personales</p>
+        <p>recargaconfiable.online</p>
+    </div>
+</footer>
+
+<!-- SCRIPT DE NAVEGACIÓN DINÁMICA -->
+<script>
+function mostrarPagina(idPagina, event) {
+    if (event) event.preventDefault();
+
+    // Ocultar todas las páginas
+    const paginas = document.querySelectorAll('.page');
+    paginas.forEach(p => p.classList.remove('active'));
+
+    // Mostrar la página seleccionada
+    const paginaActiva = document.getElementById('page-' + idPagina);
+    if (paginaActiva) {
+        paginaActiva.classList.add('active');
+    }
+
+    // Actualizar enlaces activos en el menú
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(l => l.classList.remove('active'));
+    
+    if (event && event.target && event.target.tagName === 'A') {
+        event.target.classList.add('active');
+    }
+
+    // Scroll suave hacia arriba
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body></html>
